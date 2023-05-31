@@ -1,4 +1,4 @@
-# Bienvenido/a a mi Wiki 
+# 📚Bienvenido/a a mi Wiki 
 
 ¡Hola a todos! Este es mi repositorio personal de apuntes y conocimientos sobre programación y herramientas relacionadas. Aquí iré documentando todo lo que aprenda a lo largo de mi camino como desarrollador. 
 
