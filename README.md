@@ -9,6 +9,6 @@ Esta wiki es un trabajo en progreso y estoy abierto/a a contribuciones y sugeren
 
 ## Licencia
 
-Todos los contenidos de esta wiki se encuentran bajo la licencia [Apache 2.0](https://github.com/stbangr/wiki/blob/main/LICENSE). Esto significa que eres libre de utilizar, modificar y distribuir el contenido, siempre y cuando se cumplan los términos de la licencia.
+Todos los contenidos de esta wiki se encuentran bajo la licencia [Apache 2.0](https://github.com/stbangr/wiki/LICENSE.md). Esto significa que eres libre de utilizar, modificar y distribuir el contenido, siempre y cuando se cumplan los términos de la licencia.
 
 ¡Espero que encuentres esta wiki útil y que te ayude!
