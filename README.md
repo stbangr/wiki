@@ -5,8 +5,10 @@
 
 ## Contribuciones y sugerencias
 
-Esta wiki es un trabajo en progreso y estoy abierto/a a contribuciones y sugerencias de la comunidad. Si encuentras algún error, tienes alguna adición o mejora en mente, o simplemente quieres dejar tus comentarios, ¡no dudes en hacerlo! Puedes abrir un [issue](https://github.com/stebangr/wiki/issues) o enviar un [pull request](https://github.com/stebangr/wiki/pulls).
+Esta wiki es un trabajo en progreso y estoy abierto/a a contribuciones y sugerencias de la comunidad. Si encuentras algún error, tienes alguna adición o mejora en mente, o simplemente quieres dejar tus comentarios, ¡no dudes en hacerlo! Puedes abrir un [issue](https://github.com/stbangr/wiki/issues) o enviar un [pull request](https://github.com/stbangr/wiki/pulls).
 
+## Licencia
 
+Todos los contenidos de esta wiki se encuentran bajo la licencia [Apache 2.0](https://github.com/stbangr/wiki/blob/main/LICENSE). Esto significa que eres libre de utilizar, modificar y distribuir el contenido, siempre y cuando se cumplan los términos de la licencia.
 
-
+¡Espero que encuentres esta wiki útil y que te ayude!
