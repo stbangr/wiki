@@ -4,7 +4,7 @@
 
 ## Herramientas
 
-* [Git](https://github.com/stbangr/wiki/blob/main/Herramientas/Git.md)
+* [Git](https://github.com/stbangr/wiki/blob/master/Herramientas/Git.md)
 
 ## Contribuciones y sugerencias
 

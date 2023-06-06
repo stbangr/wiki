@@ -89,12 +89,15 @@ Para especificar qué archivos quieres controlar:
 Para confirmar los archivos que hemos añadido:
 >``git commit -m`` '[**Mensaje**]'
 
-La flag **-m** añade un mensaje.
+La flag **-m** añade un mensaje de confirmacion.
 El mensaje que se suele poner en el primer mensaje 'initial project version' o 'initial commit'.
 
 ***Es importante poner un mensaje siempre***.
 
+Cada vez que realizas un **commit**, guardas una instantánea de tu proyecto la cual puedes usar para comparar o volver a ella luego.
+
 ---
+
 
 ## Clonar un repositorio
 
@@ -161,4 +164,19 @@ Es más útil que lo veas como un comando para **“añadir este contenido a la 
 
 ### Ignorar Archivos
 Para archivo que no quieres que Git añada automáticamente puedes crear un archivo llamado **.gitignore** que liste patrones a considerar.
+
+### Ver los Cambios Preparados y No Preparados
+
+Para ver qué has cambiado pero aun no has preparado:
+>``git diff``
+
+Si quieres ver lo que has preparado y será incluido en la próxima confirmación, puedes usar:
+>``git diff --stage``
+
+o
+
+>``git diff --cached``
+
+*(**--staged** y **--cached** son sinónimos)*
+
 
