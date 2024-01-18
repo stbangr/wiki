@@ -179,4 +179,183 @@ o
 
 *(**--staged** y **--cached** son sinónimos)*
 
+### Confirmar tus Cambios
 
+Para confirmar lo que has preparado:
+>``git commit``
+
+Esto lanzará un editor de texto que te permitirá introducir un mensaje de confirmación.
+
+Si quieres saltar el editor de texto puedes usar la flag **-m** para escribir el mensaje de confirmación:
+>``git commit -m`` '**Mensaje**'
+
+### Saltarse el Area de Preparación
+
+En ocasiones, lo que quieres es hacer dos o más modificaciones en tu directorio de trabajo y luego confirmarlas todas en un solo paso. Puedes hacerlo usando la flag **-a** al comando **git commit**:
+>``git commit -a -m`` '**Mensaje**'
+
+### Eliminar Archivos
+
+Para eliminar un archivo del repositorio y del directorio de trabajo:
+>``git rm`` [**Archivo**]
+
+Para eliminar un archivo del repositorio pero no del directorio de trabajo:
+>``git rm --cached`` [**Archivo**]
+
+### Mover Archivos
+
+Para mover un archivo de nombre:
+>``git mv`` [**NombreActual**] [**NombreNuevo**]
+
+---
+
+## Ver el Historial de Confirmaciones
+
+Para ver el historial de confirmaciones:
+>``git log``
+
+Para ver el historial de confirmaciones con mas información:
+>``git log --stat``
+
+Para ver el historial de confirmaciones en una linea:
+>``git log --oneline``
+
+Para ver el historial de confirmaciones de un usuario:
+>``git log --author=[**Usuario**]``
+
+Para ver el historial de confirmaciones de un archivo:
+>``git log --[**Archivo**]``
+
+Para ver el historial de confirmaciones de un archivo de un usuario:
+>``git log --author=[**Usuario**] --[**Archivo**]``
+
+Para ver el historial de confirmaciones de un archivo de un usuario en una linea:
+>``git log --author=[**Usuario**] --[**Archivo**] --oneline``
+
+Para ver el historial de confirmaciones de un archivo de un usuario en una linea con mas información:
+>``git log --author=[**Usuario**] --[**Archivo**] --stat``
+
+Para ver el historial de confirmaciones de un archivo de un usuario en una linea con mas información y fecha:
+>``git log --author=[**Usuario**] --[**Archivo**] --stat --date=short``
+
+Para ver el historial de confirmaciones de un archivo de un usuario en una linea con mas información y fecha y hora:
+>``git log --author=[**Usuario**] --[**Archivo**] --stat --date=iso``
+
+Para ver el historial de confirmaciones de un archivo de un usuario en una linea con mas información y fecha y hora y con un formato especifico:
+>``git log --author=[**Usuario**] --[**Archivo**] --stat --date=format:'%d/%m/%Y'``
+
+Para ver el historial de confirmaciones de un archivo de un usuario en una linea con mas información y fecha y hora y con un formato especifico y con un limite de confirmaciones:
+>``git log --author=[**Usuario**] --[**Archivo**] --stat --date=format:'%d/%m/%Y' -n [**Numero**]``
+
+---
+
+## Deshacer Cosas
+
+### Deshacer Cambios en el Directorio de Trabajo
+
+Para deshacer las modificaciones de un archivo que no has preparado:
+>``git checkout --`` [**Archivo**]
+
+### Deshacer Cambios en el Area de Preparación
+
+Para deshacer las preparaciones de un archivo:
+>``git reset HEAD`` [**Archivo**]
+
+### Deshacer un Commit
+
+Para deshacer un commit y mantener los cambios en el directorio de trabajo:
+>``git reset --soft HEAD^``
+
+Para deshacer un commit y los cambios en el directorio de trabajo:
+>``git reset --hard HEAD^``
+
+Para deshacer un commit y los cambios en el directorio de trabajo y el area de preparacion:
+>``git reset --mixed HEAD^``
+
+### Cambiar el Mensaje del Commit
+
+Para cambiar el mensaje del ultimo commit:
+>``git commit --amend -m`` '**Mensaje**'
+
+### Recuperar un Archivo Eliminado
+
+Para recuperar un archivo eliminado:
+>``git checkout HEAD`` [**Archivo**]
+
+---
+
+## Trabajar con Remotos
+
+### Mostrar Tus Remotos
+
+Para ver los remotos que tienes configurados:
+>``git remote``
+
+Para ver los remotos que tienes configurados con mas información:
+>``git remote -v``
+---
+### Añadir Remotos
+
+Para añadir un nuevo remoto:
+>``git remote add`` [**Nombre**] [**URL**]
+
+Para añadir un nuevo remoto sin tener que especificar el nombre:
+>``git remote add`` [**URL**]
+
+---
+
+### Inspeccionar un Remoto
+
+Para ver la URL de un remoto:
+>``git remote show`` [**Remoto**]
+
+Para ver la URL de un remoto con mas información:
+>``git remote show -v`` [**Remoto**]
+
+---
+
+### Renombrar y Eliminar Remotos
+
+Para renombrar un remoto:
+>``git remote rename`` [**Remoto**] [**Nombre**]
+
+Para eliminar un remoto:
+>``git remote remove`` [**Remoto**]
+
+---
+
+### Enviar a Tus Remotos
+
+Para enviar a un remoto:
+>``git push`` [**Remoto**] [**Rama**]
+
+Para enviar a un remoto con la rama especificada como rama por defecto:
+>``git push -u`` [**Remoto**] [**Rama**]
+
+Para enviar a un remoto con la rama especificada como rama por defecto y con la flag --force:
+>``git push -u --force`` [**Remoto**] [**Rama**]
+
+Para enviar a un remoto con la rama especificada como rama por defecto y con la flag --force y con el mensaje:
+>``git push -u --force`` [**Remoto**] [**Rama**] -m '**Mensaje**'
+
+---
+
+### Inspeccionar un Remoto
+
+Para ver la URL de un remoto:
+>``git remote show`` [**Remoto**]
+
+Para ver la URL de un remoto con mas información:
+>``git remote show -v`` [**Remoto**]
+
+---
+
+### Renombrar y Eliminar Remotos
+
+Para renombrar un remoto:
+>``git remote rename`` [**Remoto**] [**Nombre**]
+
+Para eliminar un remoto:
+>``git remote remove`` [**Remoto**]
+
+---
